@@ -28,7 +28,7 @@ const AboutMe = () => {
               typeface without relying on meaningful content. Lorem ipsum may be
               used as a placeholder before the final copy is available.
             </p>
-            <button className="button px-6 py-3 text-lg font-Lato rounded-xl mx-auto ">
+            <button className="button px-6 py-3 text-lg font-Lato rounded-xl mx-auto  shadow-md shadow-[#8000cf81] ">
               View Team Members
             </button>
           </span>

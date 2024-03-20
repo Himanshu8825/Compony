@@ -8,6 +8,7 @@ export default {
       },
       fontFamily: {
         Lato: ["Lato", "sans-serif"],
+        mountain: ["Mountains of Christmas", "cursive"],
       },
     },
   },

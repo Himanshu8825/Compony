@@ -12,6 +12,12 @@ import WomenCard from "./Images/WomenCard.webp";
 import User from "./Images/User.webp";
 import Review from "./Images/Review.webp";
 import Contact from "./Images/Contact.webp";
+import One from "./Images/One.webp";
+import Two from "./Images/Two.webp";
+import Three from "./Images/Three.webp";
+import Four from "./Images/Four.webp";
+import Five from "./Images/Five.webp";
+import Six from "./Images/Six.webp";
 
 export {
   AiDekho,
@@ -28,4 +34,10 @@ export {
   User,
   Review,
   Contact,
+  One,
+  Two,
+  Three,
+  Four,
+  Five,
+  Six,
 };

@@ -9,7 +9,7 @@ const Services = () => {
         <div className="w-full flex justify-center items-center">
           <div className="w-[70%] ">
             <div className="flex justify-between items-center">
-              <p className="text-lg px-4 py-2 uppercase font-Lato  rounded-xl toggle border m-4">
+              <p className="text-lg px-4 py-2 uppercase font-Lato  rounded-xl toggle border m-4 shadow-lg shadow-[#8000cf81]">
                 UI/UX Designing
               </p>
               <p className="text-lg px-4 py-2 uppercase font-Lato  rounded-xl  m-4 shadow-white">
