@@ -18,6 +18,7 @@ import Three from "./Images/Three.webp";
 import Four from "./Images/Four.webp";
 import Five from "./Images/Five.webp";
 import Six from "./Images/Six.webp";
+import Arrow2 from "./Images/Arrow2.webp";
 
 export {
   AiDekho,
@@ -40,4 +41,5 @@ export {
   Four,
   Five,
   Six,
+  Arrow2,
 };

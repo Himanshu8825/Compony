@@ -33,7 +33,7 @@ const AboutMe = () => {
             </button>
           </span>
           <span className="w-[40%] flex justify-center items-center  ">
-            <img src={AboutMeBG} alt="" className="h-[498px]" />
+            <img src={AboutMeBG} alt="" className="h-[458px]" />
           </span>
         </span>
       </div>

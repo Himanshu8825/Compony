@@ -5,9 +5,9 @@ import { FaAddressCard, FaMobileScreenButton } from "react-icons/fa6";
 const Header = () => {
   return (
     <>
-      <div className="w-full flex justify-around items-baseline mt-6 bg_img h-[500px] relative overflow-x-hidden">
-        <span className=" bg-white/10 backdrop-filter backdrop-blur-xl shadow-xl rounded-2xl font-Lato ">
-          <span className="flex items-center  gap-2 px-4  m-2 py-1 bg-primary rounded-lg hover:opacity-80">
+      <div className="w-full flex justify-evenly items-baseline mt-[2rem] bg_img h-[500px] relative overflow-x-hidden">
+        <span className=" navbar backdrop-filter backdrop-blur-xl shadow-xl rounded-xl font-Lato border border-[#ffffff36] ">
+          <span className="flex items-center  gap-2 px-4  m-2 py-1 bg-primary  rounded-lg hover:opacity-80">
             <MdHomeFilled />
             <p>Home</p>
           </span>

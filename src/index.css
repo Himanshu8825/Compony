@@ -63,6 +63,8 @@ body {
     rgba(160, 32, 240, 0.05),
     rgba(92, 18, 138, 0.01)
   );
+  flex: 0 0 auto; /* Allow cards to grow, but not shrink */
+  margin-right: 1rem;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -82,4 +84,39 @@ body {
     rgba(144, 121, 188, 0.2),
     rgba(255, 255, 255, 0.2)
   );
+}
+
+.scrolll::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scrollbar */
+}
+
+.navbar {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+
+.brand-container {
+  overflow-x: hidden; /* Hide overflowing content horizontally */
+}
+
+.scrolling-wrapper {
+  display: flex; /* Display images in a row */
+  animation: scroll 30s linear infinite; /* Define animation for horizontal scrolling */
+}
+
+.brand-image {
+  margin-right: 20px; /* Adjust margin between images */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start scrolling from the beginning */
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll to the end */
+  }
 }

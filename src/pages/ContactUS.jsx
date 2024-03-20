@@ -10,7 +10,7 @@ const ContactUS = () => {
       <div>
         <p className="text-4xl font-Lato text-center p-[2rem]">Let’s Connect</p>
 
-        <div className="flex ml-[2rem] items-center ">
+        <div className="flex ml-[4rem] items-center ">
           <img src={Contact} alt="" />
           <div className=" contact   p-[2rem] rounded-3xl font-Roboto w-[50%] h-[50%]">
             <form action="" className="flex flex-col gap-2 text-white">
