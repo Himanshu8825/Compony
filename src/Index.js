@@ -9,6 +9,8 @@ import FaQ from "./pages/FaQ";
 import ContactUS from "./pages/ContactUS";
 import Footer from "./components/Footer";
 import Process from "./pages/Process";
+import Portfolio from "./components/Portfolio";
+import Members from "./components/Members";
 
 export {
   Logo,
@@ -22,4 +24,6 @@ export {
   ContactUS,
   Footer,
   Process,
+  Portfolio,
+  Members
 };

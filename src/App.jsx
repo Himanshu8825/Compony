@@ -11,13 +11,17 @@ import {
   ContactUS,
   Footer,
   Process,
+  Portfolio,
+  Members,
 } from "./Index";
 
 const App = () => {
   return (
     <div className=" overflow-hidden">
       <Logo />
-      <Header />
+      {/* <Portfolio /> */}
+      <Members />
+      {/* <Header />
       <Brand />
       <AboutMe />
       <Services />
@@ -26,7 +30,7 @@ const App = () => {
       <Rating />
       <FaQ />
       <ContactUS />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
