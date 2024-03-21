@@ -20,6 +20,18 @@ let ProjectImg = [
     id: "3",
     src: WomenCard,
   },
+  {
+    id: "4",
+    src: ConnectionCard,
+  },
+  {
+    id: "5",
+    src: BrandMokeyCard,
+  },
+  {
+    id: "6",
+    src: WomenCard,
+  },
 ];
 
 let RateReview = [
@@ -86,7 +98,6 @@ let LeadMembers = [
   },
 ];
 
-
 let CoreMembers = [
   {
     id: "1",
@@ -108,4 +119,4 @@ let CoreMembers = [
   },
 ];
 
-export default { ProjectImg, RateReview , LeadMembers , CoreMembers };
+export default { ProjectImg, RateReview, LeadMembers, CoreMembers };

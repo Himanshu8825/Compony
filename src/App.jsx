@@ -20,17 +20,10 @@ const App = () => {
     <div className=" overflow-hidden">
       <Logo />
       {/* <Portfolio /> */}
-      <Members />
-      {/* <Header />
-      <Brand />
-      <AboutMe />
-      <Services />
-      <Process />
-      <Project />
-      <Rating />
-      <FaQ />
-      <ContactUS />
-      <Footer /> */}
+      {/* <Members /> */}
+      <Header />
+
+      <Footer />
     </div>
   );
 };

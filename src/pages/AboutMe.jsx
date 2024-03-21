@@ -8,7 +8,7 @@ const AboutMe = () => {
         <p className="text-4xl text-white font-medium font-Lato text-center  ">
           About Us
         </p>
-        <span className="flex ">
+        <span className="flex  ">
           <span className="w-[70%] flex flex-col justify-center items-center p-[4rem]">
             <p className="p-6 text-lg font-Lato">
               In publishing and graphic design, Lorem ipsum is a placeholder

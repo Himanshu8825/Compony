@@ -20,6 +20,11 @@ import Five from "./Images/Five.webp";
 import Six from "./Images/Six.webp";
 import Arrow2 from "./Images/Arrow2.webp";
 import Model from "./Images/Model.webp";
+import Brand_Img from "./Images/Brand_Img.webp";
+import AiDekho_Img from "./Images/AiDekho_Img.webp";
+import Bibin_Babu from "./Images/Bibin_Babu.webp";
+import Women_Img from "./Images/Women_Img.webp";
+
 export {
   AiDekho,
   BrandMonkey,
@@ -43,4 +48,8 @@ export {
   Six,
   Arrow2,
   Model,
+  Brand_Img,
+  AiDekho_Img,
+  Bibin_Babu,
+  Women_Img,
 };

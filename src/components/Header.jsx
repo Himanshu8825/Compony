@@ -1,12 +1,22 @@
 import React from "react";
 import { MdHomeFilled, MdCall } from "react-icons/md";
 import { FaAddressCard, FaMobileScreenButton } from "react-icons/fa6";
+import {
+  AboutMe,
+  Brand,
+  ContactUS,
+  FaQ,
+  Process,
+  Project,
+  Rating,
+  Services,
+} from "../Index";
 
 const Header = () => {
   return (
     <>
       <div className="w-full flex justify-evenly items-baseline mt-[2rem] bg_img h-[500px] relative overflow-x-hidden">
-        <span className=" navbar backdrop-filter backdrop-blur-xl shadow-xl rounded-xl font-Lato border border-[#ffffff36] ">
+        <span className="navbar backdrop-filter backdrop-blur-xl shadow-xl rounded-xl font-Lato border border-[#ffffff36] ">
           <span className="flex items-center  gap-2 px-4  m-2 py-1 bg-primary  rounded-lg hover:opacity-80">
             <MdHomeFilled />
             <p>Home</p>
@@ -50,6 +60,31 @@ const Header = () => {
         </span>
         <div className="w-[200px] h-[200px] text-start absolute -right-[6rem]  bottom-6 border-[40px] border-primary rounded-full "></div>
       </div>
+
+      <section>
+        <Brand />
+      </section>
+      <section>
+        <AboutMe />
+      </section>
+      <section>
+        <Services />
+      </section>
+      <section>
+        <Process />
+      </section>
+      <section>
+        <Project />
+      </section>
+      <section>
+        <Rating />
+      </section>
+      <section>
+        <FaQ />
+      </section>
+      <section>
+        <ContactUS />
+      </section>
     </>
   );
 };
