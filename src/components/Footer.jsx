@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-black h-[150px] text-white font-Roboto flex flex-col justify-center items-center">
-        <span className="flex gap-4 cursor-pointer p-4 items-center">
+        <span className="flex   gap-4 cursor-pointer p-4 items-center">
           <span className="flex flex-col gap-2 text-lg font-Lato">
             <span className="flex items-center gap-2">
               <MdEmail />

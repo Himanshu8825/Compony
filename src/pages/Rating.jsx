@@ -4,7 +4,7 @@ import RateReview from "../Data";
 const Rating = () => {
   return (
     <>
-      <p className="text-3xl font-Lato text-center p-4">
+      <p className="ss:text-3xl text-2xl font-Lato text-center p-4">
         Hear what our customers say
       </p>
       <span className="brand-container">
@@ -12,7 +12,7 @@ const Rating = () => {
           {RateReview.RateReview.map((review, index) => (
             <span
               key={index}
-              className="Rating w-[32%] rounded-xl border border-primary"
+              className="Rating ss:w-[32%] w-full rounded-xl border border-primary"
             >
               <span className="flex">
                 <span className="m-4">

@@ -7,7 +7,7 @@ const Project = () => {
     <>
       <span className="brand-container">
         <span className="flex justify-center p-4 ">
-          <p className=" text-xs font-mountain translate-x-[6rem] rotate-[-25deg] translate-y-1 ">
+          <p className="text-xs font-mountain translate-x-[6rem] rotate-[-25deg] translate-y-1 ">
             Our Recent Work
           </p>
           <img src={Arrow} alt="" className="w-[100px] h-[100px]" />

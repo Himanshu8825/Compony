@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
       <div className="w-full flex justify-evenly items-baseline mt-[2rem] bg_img h-[500px] relative overflow-x-hidden">
-        <span className="navbar backdrop-filter backdrop-blur-xl shadow-xl rounded-xl font-Lato border border-[#ffffff36] ">
+        <span className="hidden ss:block navbar backdrop-filter backdrop-blur-xl shadow-xl rounded-xl font-Lato border border-[#ffffff36] ">
           <span className="flex items-center  gap-2 px-4  m-2 py-1 bg-primary  rounded-lg hover:opacity-80">
             <MdHomeFilled />
             <p>Home</p>
@@ -44,10 +44,10 @@ const Header = () => {
         </span>
 
         <span className="font-Lato">
-          <p className="text-[3rem] text-center font-semibold">
-            Transform Your Technology , <br /> Accelerate Your Growth
+          <p className="ss:w-[800px] ss:text-[3rem] text-[2rem] text-center font-semibold">
+            Transform Your Technology , Accelerate Your Growth
           </p>
-          <p className="text-lg">
+          <p className="text-lg text-center px-4 mt-4">
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used to demonstrate t
           </p>
@@ -58,7 +58,7 @@ const Header = () => {
             </span>
           </span>
         </span>
-        <div className="w-[200px] h-[200px] text-start absolute -right-[6rem]  bottom-6 border-[40px] border-primary rounded-full "></div>
+        <div className="hidden ss:block w-[200px] h-[200px] text-start absolute -right-[6rem]  bottom-6 border-[40px] border-primary rounded-full "></div>
       </div>
 
       <section>
