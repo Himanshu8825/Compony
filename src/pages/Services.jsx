@@ -13,66 +13,65 @@ const Services = () => {
       title: "UI/UX Designing",
       description:
         "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is Lo",
-      image: ServiceImg1,
+      image:
+        "https://media.istockphoto.com/id/1007097624/vector/ux-design.jpg?s=612x612&w=0&k=20&c=EtX0C49-cFMlQiubcIZbQtrMsjuetOprzFAkanz1Q-8=",
     },
     "web-dev": {
       title: "Web Development",
-      description: "Web development data goes here.",
-      image: ServiceImg1,
+      description:
+        "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is Lo",
+      image:
+        "https://media.istockphoto.com/id/1406684959/vector/modern-3d-illustration-of-young-man-programming-concept.jpg?s=612x612&w=0&k=20&c=2l3e_tuADe6trKO-mWTDGN0LF4KJNhqEO8FR8nZgE7g=",
     },
     "mobile-dev": {
       title: "Mobile Development",
-      description: "Mobile development data goes here.",
-      image: ServiceImg1,
+      description:
+        "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is Lo",
+      image:
+        "https://media.istockphoto.com/id/1351107099/photo/cartoon-hand-holding-smartphone-on-blue-background.jpg?s=612x612&w=0&k=20&c=vUul4cu3w0LMd7Fv0YE5vi6n5KIA5jAe1eB5eT_QUmI=",
     },
   };
 
   return (
     <>
       <span>
-        <p className="text-4xl font-Lato text-center p-4">Services</p>
-        <span className="w-full flex justify-center items-center">
-          <span className="ss:w-[70%] w-full">
-            <span className="flex ss:flex-row flex-col justify-between items-center cursor-pointer">
+        <p className="text-4xl font-Lato text-center p-[4rem] mb-4">Services</p>
+        <span className="w-full flex justify-center items-center ">
+          <span className="ss:w-[70%] w-full ">
+            <span className="flex gap-0 justify-between items-center cursor-pointer">
               <p
                 onClick={() => handleTabClick("ui-ux")}
-                className={`text-lg font-Lato  ${
-                  activeTab === "ui-ux"
-                    ? "text-lg px-4 py-2 uppercase font-Lato rounded-xl toggle border m-4"
-                    : ""
+                className={`ss:text-lg text-xs  ss:px-6 px-4 ss:py-3 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-xl  ${
+                  activeTab === "ui-ux" ? " toggle border" : ""
                 }`}
               >
                 UI/UX Designing
               </p>
               <p
                 onClick={() => handleTabClick("web-dev")}
-                className={`text-lg font-Lato${
-                  activeTab === "web-dev"
-                    ? "text-lg px-4 py-2 uppercase font-Lato rounded-xl toggle border m-4 "
-                    : ""
+                className={`ss:text-lg text-xs  ss:px-6 px-4 ss:py-3 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-xl${
+                  activeTab === "web-dev" ? " toggle border  " : ""
                 }`}
               >
                 Web Development
               </p>
               <p
                 onClick={() => handleTabClick("mobile-dev")}
-                className={`text-lg font-Lato ${
-                  activeTab === "mobile-dev"
-                    ? "text-lg px-4 py-2 uppercase font-Lato rounded-xl toggle border m-4"
-                    : ""
+                className={`ss:text-lg text-xs  ss:px-6 px-2 ss:py-3 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-xl${
+                  activeTab === "mobile-dev" ? " toggle border" : ""
                 }`}
               >
                 Mobile Development
               </p>
             </span>
-            <span className="flex ss:flex-row flex-col m-8 shadow-2xl">
+            <span className="flex ss:flex-row flex-col m-8 ss:gap-[8rem] gap-0 shadow-black shadow-xl rounded-2xl">
               <img
                 src={tabContent[activeTab].image}
                 alt=""
-                className="w-full"
+                className="ss:w-[400px] w-auto  m-6  rounded-xl"
               />
               <span className="flex justify-center items-center">
-                <p className="text-lg font-Lato ss:p-6 ss:-ml-[6rem]">
+                <p className="text-lg font-Lato ss:p-4 p-4 ss:-ml-[8rem]">
                   {tabContent[activeTab].description}
                 </p>
               </span>

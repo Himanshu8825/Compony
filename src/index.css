@@ -105,7 +105,7 @@ body {
 
 .scrolling-wrapper {
   display: flex; /* Display images in a row */
-  animation: scroll 30s linear infinite; /* Define animation for horizontal scrolling */
+  animation: scroll 10s linear infinite; /* Define animation for horizontal scrolling */
 }
 
 .brand-image {
@@ -120,6 +120,3 @@ body {
     transform: translateX(-100%); /* Scroll to the end */
   }
 }
-
-
-

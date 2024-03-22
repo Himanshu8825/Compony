@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import {
   Logo,
   Header,
@@ -19,9 +20,11 @@ const App = () => {
   return (
     <div className=" overflow-hidden">
       <Logo />
-      {/* <Portfolio /> */}
-      {/* <Members /> */}
-      <Header />
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/members" element={<Members />} />
+      </Routes>
 
       <Footer />
     </div>

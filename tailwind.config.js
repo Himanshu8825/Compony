@@ -7,7 +7,7 @@ export default {
         primary: "#8000CF",
       },
       fontFamily: {
-        Lato: ["Lato", "sans-serif"],
+        Lato: ["Lato"],
         mountain: ["Mountains of Christmas", "cursive"],
       },
       screens: {

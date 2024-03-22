@@ -1,6 +1,6 @@
 import React from "react";
-import { MdHomeFilled, MdCall } from "react-icons/md";
-import { FaAddressCard, FaMobileScreenButton } from "react-icons/fa6";
+import { MdCall } from "react-icons/md";
+
 import {
   AboutMe,
   Brand,
@@ -11,37 +11,15 @@ import {
   Rating,
   Services,
 } from "../Index";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <>
-      <div className="w-full flex justify-evenly items-baseline mt-[2rem] bg_img h-[500px] relative overflow-x-hidden">
-        <span className="hidden ss:block navbar backdrop-filter backdrop-blur-xl shadow-xl rounded-xl font-Lato border border-[#ffffff36] ">
-          <span className="flex items-center  gap-2 px-4  m-2 py-1 bg-primary  rounded-lg hover:opacity-80">
-            <MdHomeFilled />
-            <p>Home</p>
-          </span>
-          <span className="flex items-center  gap-2 px-4  m-2 py-1 ">
-            <FaAddressCard />
-            <p>About</p>
-          </span>
-          <span className="flex items-center  gap-2 px-4   m-2 py-1 ">
-            <FaAddressCard />
-            <p>Services</p>
-          </span>
-          <span className="flex items-center  gap-2 px-4   m-2 py-1 ">
-            <FaMobileScreenButton />
-            <p>PortFolio</p>
-          </span>
-          <span className="flex items-center  gap-2 px-4   m-2 py-1">
-            <FaMobileScreenButton />
-            <p>TestMonials</p>
-          </span>
-          <span className="flex items-center  gap-2 px-4   m-2 py-1 ">
-            <FaMobileScreenButton />
-            <p>Contact</p>
-          </span>
-        </span>
+      <div className="w-full flex items-baseline mt-[2rem]  ss:ml-[4rem] ml-0 gap-[6rem] bg_img h-[500px] relative overflow-x-hidden">
+        <div className="ss:block  hidden">
+          <Navbar />
+        </div>
 
         <span className="font-Lato">
           <p className="ss:w-[800px] ss:text-[3rem] text-[2rem] text-center font-semibold">
@@ -58,7 +36,7 @@ const Header = () => {
             </span>
           </span>
         </span>
-        <div className="hidden ss:block w-[200px] h-[200px] text-start absolute -right-[6rem]  bottom-6 border-[40px] border-primary rounded-full "></div>
+        <div className="hidden ss:block w-[200px] h-[200px] text-start absolute -right-[3rem]  bottom-6 border-[40px] border-primary rounded-full "></div>
       </div>
 
       <section>

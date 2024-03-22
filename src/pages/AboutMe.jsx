@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutMeBG } from "../assets/Index";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -28,9 +29,11 @@ const AboutMe = () => {
               typeface without relying on meaningful content. Lorem ipsum may be
               used as a placeholder before the final copy is available.
             </p>
-            <button className="button px-6 py-3  text-lg font-Lato rounded-xl mx-auto  shadow-md shadow-[#8000cf81] ">
-              View Team Members
-            </button>
+            <Link to= '/members'>
+              <button className="button px-6 py-3  text-lg font-Lato rounded-xl mx-auto  shadow-md shadow-[#8000cf81] ">
+                View Team Members
+              </button>
+            </Link>
           </span>
           <span className="ss:w-[40%] w-full order-1 ss:order-2 flex justify-center items-center  ">
             <img src={AboutMeBG} alt="" className="h-[458px]" />
