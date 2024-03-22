@@ -52,14 +52,16 @@ const FaQ = () => {
             {faqData.map((item, index) => (
               <div key={index}>
                 <span
-                  className={`flex gap-2 items-center px-4 py-3 query m-[1.5rem] rounded-xl`}
+                  className={`flex gap-2   px-4 py-3 query m-[1.5rem] rounded-xl`}
                 >
-                  <FaPlay
-                    className={`text-white mb-0 ss:text-base text-xl cursor-pointer   ${
-                      activeIndex === index ? "rotate-90  " : ""
-                    }`}
-                    onClick={() => handleAccordionClick(index)}
-                  />
+                  <span className="h-[10px] pt-2">
+                    <FaPlay
+                      className={`text-white mb-0   ss:text-base text-xl cursor-pointer   ${
+                        activeIndex === index ? "rotate-90  " : ""
+                      }`}
+                      onClick={() => handleAccordionClick(index)}
+                    />
+                  </span>
                   <p className="ss:text-lg text-sm font-Lato">
                     {item.question}
                     {activeIndex === index && (

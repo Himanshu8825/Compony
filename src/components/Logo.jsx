@@ -23,7 +23,7 @@ const Logo = () => {
             Lets Connect
           </button>
         </span>
-        <div className="ss:hidden block">
+        <div className="ss:hidden block  ">
           <Navbar />
         </div>
       </div>

@@ -16,10 +16,11 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
-      <div className="w-full flex items-baseline mt-[2rem]  ss:ml-[4rem] ml-0 gap-[6rem] bg_img h-[500px] relative overflow-x-hidden">
-        <div className="ss:block  hidden">
+      <div className="w-full flex  items-baseline mt-[2rem]  ss:ml-[4rem] ml-0 gap-[6rem] bg_img  h-[500px] relative overflow-x-hidden">
+        <div className="w-[600px] h-[200px]  absolute -z-50 right-1/2 "></div>
+        <span className="ss:block  hidden">
           <Navbar />
-        </div>
+        </span>
 
         <span className="font-Lato">
           <p className="ss:w-[800px] ss:text-[3rem] text-[2rem] text-center font-semibold">
