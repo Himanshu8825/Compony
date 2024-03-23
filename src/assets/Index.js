@@ -24,6 +24,7 @@ import Brand_Img from "./Images/Brand_Img.webp";
 import AiDekho_Img from "./Images/AiDekho_Img.webp";
 import Bibin_Babu from "./Images/Bibin_Babu.webp";
 import Women_Img from "./Images/Women_Img.webp";
+import Wave from "./Images/Wave.webp";
 
 export {
   AiDekho,
@@ -52,4 +53,5 @@ export {
   AiDekho_Img,
   Bibin_Babu,
   Women_Img,
+  Wave,
 };

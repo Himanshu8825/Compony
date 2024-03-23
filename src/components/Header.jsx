@@ -16,7 +16,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
-      <div className="w-full flex  items-baseline mt-[2rem]  ss:ml-[4rem] ml-0 gap-[6rem] bg_img  h-[500px] relative overflow-x-hidden">
+      <div className="w-full flex  items-baseline mt-[4rem]  ss:ml-[4rem] ml-0 ss:gap-[6rem] gap-0 bg_img  ss:h-[500px] h-auto relative overflow-x-hidden">
         <div className="w-[600px] h-[200px]  absolute -z-50 right-1/2 "></div>
         <span className="ss:block  hidden">
           <Navbar />
@@ -26,7 +26,7 @@ const Header = () => {
           <p className="ss:w-[800px] ss:text-[3rem] text-[2rem] text-center font-semibold">
             Transform Your Technology , Accelerate Your Growth
           </p>
-          <p className="text-lg text-center px-4 mt-4">
+          <p className="text-center px-4 mt-4">
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used to demonstrate t
           </p>

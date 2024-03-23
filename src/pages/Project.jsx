@@ -26,7 +26,7 @@ const Project = () => {
           ))}
         </span>
         <span className="flex justify-center">
-          <button className="text-lg px-6 py-2 toggle rounded-xl m-[2rem] shadow-lg shadow-[#8000cf81] ">
+          <button className="text-lg px-6 py-2 toggle rounded-xl m-[2rem] mb-[6rem] shadow-lg shadow-[#8000cf81] ">
             View Project
           </button>
         </span>

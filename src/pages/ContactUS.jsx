@@ -75,9 +75,11 @@ const ContactUS = () => {
           </div>
         </div>
 
-        <span className="flex items-center flex-col gap-1 mb-4">
-          <p className="ss:text-3xl text-xl">Fuel Your Brand’s Goals with Us</p>
-          <span className=" flex items-center gap-2 px-8 py-3 toggle m-4 rounded-xl shadow-lg shadow-[#8000cf81]">
+        <span className="flex items-center flex-col gap mt-[4rem] mb-8">
+          <p className="ss:text-3xl  text-xl">
+            Fuel Your Brand’s Goals with Us
+          </p>
+          <span className=" flex items-center gap-2 px-8 py-2 toggle m-4 rounded-xl shadow-md shadow-[#8000cf81]">
             <FaPhoneAlt />
             <button className="text-xl font-Lato">Book a Discovery Call</button>
           </span>

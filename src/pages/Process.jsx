@@ -5,9 +5,9 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 const Process = () => {
   return (
     <>
-      <span className="flex flex-col  scrolll mb-[4rem] brand-container">
+      <span className="flex flex-col  scrolll mb-[4rem]  ">
         <p className="text-3xl font-Lato text-center p-[4rem]">Process</p>
-        <span className="flex gap-[4rem] m-4 w-full scrolling-wrapper">
+        <span className="flex gap-[4rem] m-4 w-full overflow-x-scroll ">
           <span className="w-full flex gap-4 ">
             <span className="flex gap-4  items-center">
               <span className="">

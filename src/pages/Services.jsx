@@ -41,15 +41,16 @@ const Services = () => {
             <span className="flex gap-0 justify-between items-center cursor-pointer">
               <p
                 onClick={() => handleTabClick("ui-ux")}
-                className={`ss:text-lg text-xs  ss:px-6 px-4 ss:py-3 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-xl  ${
-                  activeTab === "ui-ux" ? " toggle border" : ""
+                className={`ss:text-lg text-xs ss:px-6 px-4 ss:py-2 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-sm ${
+                  activeTab === "ui-ux" ? "toggle border" : ""
                 }`}
               >
                 UI/UX Designing
               </p>
+
               <p
                 onClick={() => handleTabClick("web-dev")}
-                className={`ss:text-lg text-xs  ss:px-6 px-4 ss:py-3 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-xl${
+                className={`ss:text-lg text-xs  ss:px-6 px-4 ss:py-2 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-sm${
                   activeTab === "web-dev" ? " toggle border  " : ""
                 }`}
               >
@@ -57,14 +58,14 @@ const Services = () => {
               </p>
               <p
                 onClick={() => handleTabClick("mobile-dev")}
-                className={`ss:text-lg text-xs  ss:px-6 px-2 ss:py-3 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-xl${
+                className={`ss:text-lg text-xs  ss:px-6 px-2 ss:py-2 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-sm${
                   activeTab === "mobile-dev" ? " toggle border" : ""
                 }`}
               >
                 Mobile Development
               </p>
             </span>
-            <span className="flex ss:flex-row flex-col m-8 ss:gap-[8rem] gap-0 shadow-black shadow-xl rounded-2xl">
+            <span className="flex ss:flex-row flex-col m-8 ss:gap-[8rem] gap-0 shadow-black shadow-sm rounded-2xl">
               <img
                 src={tabContent[activeTab].image}
                 alt=""

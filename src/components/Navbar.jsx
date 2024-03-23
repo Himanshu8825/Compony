@@ -3,6 +3,7 @@ import { MdHomeFilled } from "react-icons/md";
 import { FaAddressCard, FaMobileScreenButton } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const location = useLocation();
@@ -20,15 +21,15 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar backdrop-filter backdrop-blur-xl p-2 rounded-xl font-Lato border border-[#ffffff36] 
+        className={`navbar backdrop-filter backdrop-blur-lg p-2 mt-[4rem]  rounded-xl font-Lato border border-[#ffffff36] 
          ${
            showMenu
-             ? "-translate-x-[10rem] duration-700 ease-in-out ss:translate-x-0 absolute z-50"
+             ? "-translate-x-[10rem] duration-700 ease-in-out ss:translate-x-0 absolute z-50  "
              : " translate-x-[6rem] ss:translate-x-0 "
          }`}
       >
         <ul
-          className={` font-Lato flex flex-col relative   ${
+          className={` font-Lato flex flex-col relative    ${
             showMenu ? "" : "hidden md:flex"
           }`}
         >
@@ -94,21 +95,21 @@ const Navbar = () => {
             <p>Contact</p>
           </Link>
         </ul>
-        <GiHamburgerMenu
-          className={`text-3xl  block md:hidden cursor-pointer absolute right-[5rem] top-0    ${
-            !showMenu ? "block" : "hidden"
-          }`}
-          onClick={toggleMenu}
-        />
-        {showMenu && (
-          <span
-            className="text-3xl absolute right-0 -top-[3rem]  cursor-pointer"
-            onClick={toggleMenu}
-          >
-            x
-          </span>
-        )}
       </div>
+      <GiHamburgerMenu
+        className={`text-3xl  block md:hidden cursor-pointer absolute right-[rem] top-[2.5rem]    ${
+          !showMenu ? "block" : "hidden"
+        }`}
+        onClick={toggleMenu}
+      />
+      {showMenu && (
+        <span
+          className="text-3xl absolute right-4 top-[2.5rem] cursor-pointer"
+          onClick={toggleMenu}
+        >
+          <RxCross2 />
+        </span>
+      )}
     </>
   );
 };
