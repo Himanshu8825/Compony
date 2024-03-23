@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 
-const Navbar = () => {
+const Navbar = ({ setShowNav }) => {
   const location = useLocation();
   const [activePath, setActivePath] = useState("");
   const [showMenu, setShowMenu] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar backdrop-filter backdrop-blur-lg p-2 mt-[4rem]  rounded-xl font-Lato border border-[#ffffff36] 
+        className={`navbar backdrop-filter backdrop-blur-lg p-2   rounded-xl font-Lato border border-[#ffffff36] 
          ${
            showMenu
              ? "-translate-x-[10rem] duration-700 ease-in-out ss:translate-x-0 absolute z-50  "
@@ -33,6 +33,10 @@ const Navbar = () => {
             showMenu ? "" : "hidden md:flex"
           }`}
         >
+          <RxCross2
+            className=" translate-x-[8rem]  text-2xl text-end cursor-pointer"
+            onClick={() => setShowNav(false)}
+          />
           <Link
             to="/"
             className={`flex items-center  gap-2 px-4  m-2 py-1   rounded-lg ${
@@ -44,7 +48,6 @@ const Navbar = () => {
             <MdHomeFilled />
             <p>Home</p>
           </Link>
-
           <Link
             to="/#about"
             className={`flex items-center  gap-2 px-4  m-2 py-1   rounded-lg${
@@ -54,7 +57,6 @@ const Navbar = () => {
             <FaAddressCard />
             <p>About</p>
           </Link>
-
           <Link
             to="/services"
             className={`flex items-center  gap-2 px-4  m-2 py-1   rounded-lg${
@@ -64,7 +66,6 @@ const Navbar = () => {
             <FaAddressCard />
             <p>Services</p>
           </Link>
-
           <Link
             to="/portfolio"
             className={`flex items-center  gap-2 px-4  m-2 py-1   rounded-lg${
@@ -74,7 +75,6 @@ const Navbar = () => {
             <FaMobileScreenButton />
             <p>PortFolio</p>
           </Link>
-
           <Link
             to="testmobials"
             className={`flex items-center  gap-2 px-4  m-2 py-1   rounded-lg${
@@ -84,7 +84,6 @@ const Navbar = () => {
             <FaMobileScreenButton />
             <p>TestMonials</p>
           </Link>
-
           <Link
             to="/contact"
             className={`flex items-center  gap-2 px-4  m-2 py-1   rounded-lg${

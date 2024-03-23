@@ -20,11 +20,6 @@ const Brand = () => {
         <img src={BrandMonkey} alt="" className="w-[165px] h-[117px]" />
         <img src={Pay} alt="" className="w-[198px] h-[149px]" />
         <img src={IDS} alt="" className="w-[150px]" />
-        {/* <img src={Connecting} alt="" className="w-[145px]" />
-        <img src={AiDekho} alt="" className="w-[260px] h-[68px]" />
-        <img src={BrandMonkey} alt="" className="w-[165px] h-[117px]" />
-        <img src={Pay} alt="" className="w-[198px] h-[149px]" />
-        <img src={IDS} alt="" className="w-[150px]" /> */}
       </div>
     </Marquee>
   );

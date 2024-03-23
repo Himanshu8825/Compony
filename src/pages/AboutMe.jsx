@@ -10,8 +10,8 @@ const AboutMe = () => {
           About Us
         </p>
         <span className="flex flex-col ss:flex-row ss:p-[2rem] ss:gap-[2rem]  ">
-          <span className="ss:w-[50%] w-full order-2 ss:order-1 flex flex-col justify-center items-center ">
-            <p className="p-6  font-Lato">
+          <span className="ss:w-[50%] w-full order-2 ss:order-1 flex flex-col justify-center items-center mt-[4rem] ">
+            <p className="p-6  font-Lato  ">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document or
               a typeface without relying on meaningful content. Lorem ipsum may

@@ -29,12 +29,11 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   height: 475px;
-  
 }
 
 .bg_img2 {
   background-image: url("./assets/Images/Admin.webp");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

@@ -5,6 +5,7 @@ const FaQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleAccordionClick = (index) => {
+    
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -58,7 +59,7 @@ const FaQ = () => {
                     <FaPlay
                       className={`text-white mb-0   ss:text-base text-xl cursor-pointer    ${
                         activeIndex === index
-                          ? "  transition-all ease-in-out duration-500 rotate-90  "
+                          ? "  transition-all ease-in-out duration-500 rotate-90 "
                           : "  transition-all ease-in-out  duration-500"
                       }`}
                       onClick={() => handleAccordionClick(index)}
@@ -67,7 +68,13 @@ const FaQ = () => {
                   <p className="ss:text-lg text-sm font-Lato">
                     {item.question}
                     {activeIndex === index && (
-                      <p className=" ss:text-lg  text-sm font-light text-start font-Lato  py-3">
+                      <p
+                        className={` ss:text-lg  text-sm font-light text-start font-Lato  py-3  ${
+                          activeIndex === index
+                            ? "transition-all ease-in-out duration-500 bg-blue-400"
+                            : "transition-all ease-in-out delay-1000 duration-500 "
+                        }  bg-red-700 `}
+                      >
                         {item.answer}
                       </p>
                     )}
