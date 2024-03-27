@@ -41,8 +41,10 @@ const Services = () => {
             <span className="flex gap-0 justify-between items-center cursor-pointer">
               <p
                 onClick={() => handleTabClick("ui-ux")}
-                className={`ss:text-lg text-xs ss:px-6 px-4 ss:py-2 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-sm ${
-                  activeTab === "ui-ux" ? "toggle border" : ""
+                className={`ss:text-lg text-xs ss:px-6 px-4 ss:py-2 py-1 m-2 uppercase font-Lato rounded-xl shadow-black shadow-sm  ${
+                  activeTab === "ui-ux"
+                    ? "toggle border "
+                    : ""
                 }`}
               >
                 UI/UX Designing
@@ -65,18 +67,18 @@ const Services = () => {
                 Mobile Development
               </p>
             </span>
-            <span className="flex ss:flex-row flex-col m-8 ss:gap-[8rem] gap-0 shadow-black shadow-sm rounded-2xl">
+            <div className="flex md:flex-row flex-col m-8 md:gap-[8rem] gap-0 shadow-black shadow-sm rounded-2xl">
               <img
                 src={tabContent[activeTab].image}
                 alt=""
-                className="ss:w-[400px] w-auto  m-6  rounded-xl"
+                className="md:w-[400px] w-auto  m-6  rounded-xl"
               />
-              <span className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
                 <p className="text-lg font-Lato ss:p-4 p-4 ss:-ml-[8rem]">
                   {tabContent[activeTab].description}
                 </p>
-              </span>
-            </span>
+              </div>
+            </div>
           </span>
         </span>
       </span>

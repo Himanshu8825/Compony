@@ -16,11 +16,15 @@ body {
   color: white;
 }
 
-.bg_img {
-  background-image: url("./assets/Images/HomePage.webp");
-  background-size: contain;
+.header-bg {
+  /* Set background to a linear gradient with two images */
+  background: url("./assets/Images/HomePage.webp") left top,
+    url("./assets/Images/Admin.webp") right top;
   background-repeat: no-repeat;
-  /* height: 596px; */
+  background-size: 56%;
+  background-position: left top, right top; /* Position each image */
+  display: flex;
+  justify-content: space-between;
 }
 
 .wave {
@@ -29,12 +33,6 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   height: 475px;
-}
-
-.bg_img2 {
-  background-image: url("./assets/Images/Admin.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .background {
@@ -106,24 +104,9 @@ body {
   );
 }
 
-.brand-container {
-  overflow-x: hidden; /* Hide overflowing content horizontally */
-}
 
-scrolling-wrapper {
-  display: flex; /* Display images in a row */
-  animation: scroll 5s linear infinite; /* Define animation for horizontal scrolling */
-}
 
-.brand-image {
-  margin-right: 20px; /* Adjust margin between images */
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(20%); /* Start scrolling from the beginning */
-  }
-  100% {
-    transform: translateX(-100%); /* Scroll to the end */
-  }
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

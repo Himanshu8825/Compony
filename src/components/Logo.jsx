@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const Logo = () => {
   return (
     <>
-      <div className=" flex justify-between  ss:px-[6rem] px-[2rem] pt-[2rem] ">
+      <div className=" flex justify-between  ss:px-[6rem] px-[2rem] pt-[2rem] mb-[2rem] ">
         <p className="text-[32px] font-semibold font-Lato text-shadow">LOGO</p>
         <span className="hidden ss:flex gap-6 justify-center items-center">
           <span className="background p-2 rounded-xl">

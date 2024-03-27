@@ -1,24 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import LeadMembers from "../Data";
 import CoreMembers from "../Data";
-import Toggle from "./Toggle";
 import Navbar from "./Navbar";
 
 const Members = () => {
-  const [showNav, setShowNav] = useState(true);
+
   return (
     <>
-      <div>
+      <div className="">
         <p className="text-3xl font-Lato font-medium text-center p-[2rem]">
           Lead Members
         </p>
 
         <div className=" w-[180px] ss:block  hidden  mt-[4rem] ml-4 absolute top-[4rem]">
-          {showNav ? (
-            <Navbar setShowNav={setShowNav} />
-          ) : (
-            <Toggle setShowNav={setShowNav} />
-          )}
+        <Navbar type='HEADER' /> 
         </div>
 
         <div className="grid ss:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:p-[2rem]  ss:p-0">

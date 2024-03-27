@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdCall } from "react-icons/md";
 
 import {
@@ -12,23 +12,15 @@ import {
   Services,
 } from "../Index";
 import Navbar from "./Navbar";
-import Toggle from "./Toggle";
 
 const Header = () => {
-  const [showNav, setShowNav] = useState(true);
   return (
     <>
-      <div className="bg_img2 w-[740px] h-[420px] absolute -z-50 right-[4rem] top-[8rem] "></div>
-      <div className="w-full flex  items-baseline mt-[4rem]  ss:ml-[4rem] ml-0 ss:gap-[6rem] gap-0 bg_img  ss:h-[500px] h-auto  overflow-x-hidden relative">
-        <div className="ss:block  hidden border-2 mt-[4rem]">
-          {showNav ? (
-            <Navbar setShowNav={setShowNav} />
-          ) : (
-            <Toggle setShowNav={setShowNav} />
-          )}
+      <div className="w-full px-10 overflow-hidden flex header-bg pt-10 h-[580px] relative ">
+        <div className="md:block  hidden ">
+          <Navbar type="HEADER" />
         </div>
-
-        <span className="font-Lato">
+        <div className="font-Lato mx-auto">
           <p className="ss:w-[800px] ss:text-[3rem] text-[2rem] text-center font-semibold">
             Transform Your Technology , Accelerate Your Growth
           </p>
@@ -42,17 +34,16 @@ const Header = () => {
               <button>Book a Discovery Call</button>
             </span>
           </span>
-        </span>
-        <div className="hidden ss:block w-[200px] h-[200px] text-start absolute -right-[3rem]  bottom-6 border-[40px] border-primary rounded-full z-50 "></div>
+        </div>
+        <div className="hidden ss:block w-[200px] h-[200px] text-start absolute -right-[6rem]  bottom-[4rem] border-[40px] border-primary rounded-full z-50 "></div>
       </div>
-
-      <section>
+      <section id="testmobials">
         <Brand />
       </section>
-      <section>
+      <section id="about">
         <AboutMe />
       </section>
-      <section>
+      <section id="services">
         <Services />
       </section>
       <section>
@@ -67,7 +58,7 @@ const Header = () => {
       <section>
         <FaQ />
       </section>
-      <section>
+      <section id="contact">
         <ContactUS />
       </section>
     </>

@@ -5,7 +5,6 @@ const FaQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleAccordionClick = (index) => {
-    
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -71,9 +70,9 @@ const FaQ = () => {
                       <p
                         className={` ss:text-lg  text-sm font-light text-start font-Lato  py-3  ${
                           activeIndex === index
-                            ? "transition-all ease-in-out duration-500 bg-blue-400"
-                            : "transition-all ease-in-out delay-1000 duration-500 "
-                        }  bg-red-700 `}
+                            ? "transition-all ease-in-out duration-500 "
+                            : "transition-all ease-in-out  duration-500 "
+                        }   `}
                       >
                         {item.answer}
                       </p>
